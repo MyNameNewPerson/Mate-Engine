@@ -1,0 +1,5 @@
+user: root
+password: ""
+host: localhost
+database: cmangos_tbc
+port: 3306
