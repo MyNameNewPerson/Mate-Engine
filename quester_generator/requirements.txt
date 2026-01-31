@@ -1,0 +1,4 @@
+PyYAML
+mysql-connector-python
+numpy
+scikit-learn
