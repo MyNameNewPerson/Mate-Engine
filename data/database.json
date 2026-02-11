@@ -1,0 +1,175 @@
+{
+  "brands": [
+    {
+      "id": "bosch",
+      "name": "Bosch",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bosch-logo.svg/1280px-Bosch-logo.svg.png",
+      "types": ["coffee_maker", "washing_machine", "drill"]
+    },
+    {
+      "id": "dyson",
+      "name": "Dyson",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dyson_logo.svg/1200px-Dyson_logo.svg.png",
+      "types": ["vacuum_cleaner"]
+    },
+    {
+      "id": "ikea",
+      "name": "IKEA",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/1200px-Ikea_logo.svg.png",
+      "types": ["furniture"]
+    }
+  ],
+  "device_types": [
+    { "id": "coffee_maker", "name": "Кофемашины", "icon_class": "fa-mug-hot" },
+    { "id": "washing_machine", "name": "Стиральные машины", "icon_class": "fa-soap" },
+    { "id": "drill", "name": "Электроинструмент", "icon_class": "fa-screwdriver" },
+    { "id": "vacuum_cleaner", "name": "Пылесосы", "icon_class": "fa-wind" },
+    { "id": "furniture", "name": "Мебель", "icon_class": "fa-chair" }
+  ],
+  "models": [
+    {
+      "id": "bosch_benvenuto_tca",
+      "brand_id": "bosch",
+      "type_id": "coffee_maker",
+      "name": "Bosch Benvenuto TCA Series",
+      "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&q=80&w=1000",
+      "visual_hotspots": [
+        { "x": 45, "y": 60, "part_id": "bosch_gear_mixer" },
+        { "x": 20, "y": 30, "part_id": "bosch_water_tank_handle" },
+        { "x": 70, "y": 80, "part_id": "generic_knob_1" }
+      ]
+    },
+    {
+      "id": "dyson_v10",
+      "brand_id": "dyson",
+      "type_id": "vacuum_cleaner",
+      "name": "Dyson V10 Cyclone",
+      "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&q=80&w=1000",
+      "visual_hotspots": [
+        { "x": 50, "y": 40, "part_id": "dyson_v10_trigger" }
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "bosch_gear_mixer",
+      "model_id": "bosch_benvenuto_tca",
+      "name": "Усиленная шестерня привода",
+      "stl_link": "models/bosch_gear.stl",
+      "affiliate_query": "Bosch Benvenuto gear",
+      "specs": {
+        "print_time": "1h 20m",
+        "material": "Nylon / PETG",
+        "weight": "15g",
+        "infill": "100%",
+        "supports": "None"
+      },
+      "technical_specs": {
+        "teeth": 18,
+        "diameter": "32mm",
+        "bore": "8mm"
+      },
+      "compatibility": ["Bosch Benvenuto TCA5201", "Bosch TCA5309", "Siemens Surpresso"],
+      "installation_guide": {
+        "youtube_id": "dQw4w9WgXcQ",
+        "difficulty": "Medium",
+        "time": "45 min"
+      },
+      "tags": ["gear", "mechanical"],
+      "fake_makes_count": 128
+    },
+    {
+      "id": "dyson_v10_trigger",
+      "model_id": "dyson_v10",
+      "name": "Улучшенная кнопка (Триггер)",
+      "stl_link": "models/dyson_trigger.stl",
+      "affiliate_query": "Dyson V10 trigger replacement",
+      "specs": {
+        "print_time": "45m",
+        "material": "PETG / ABS",
+        "weight": "5g",
+        "infill": "50%",
+        "supports": "Tree"
+      },
+      "technical_specs": {
+        "length": "45mm",
+        "mount_type": "pivot"
+      },
+      "compatibility": ["Dyson V10", "Dyson V11", "Dyson V11 Animal"],
+      "installation_guide": {
+        "youtube_id": "8zS_83uT6G4",
+        "difficulty": "Hard",
+        "time": "60 min"
+      },
+      "tags": ["trigger", "button"],
+      "fake_makes_count": 850
+    },
+    {
+      "id": "generic_knob_1",
+      "model_id": "bosch_benvenuto_tca",
+      "name": "Универсальная ручка управления",
+      "stl_link": "models/knob_v1.stl",
+      "affiliate_query": "Universal appliance knob",
+      "specs": {
+        "print_time": "30m",
+        "material": "PLA / PETG",
+        "weight": "8g",
+        "infill": "20%",
+        "supports": "None"
+      },
+      "technical_specs": {
+        "diameter": "24mm",
+        "mount_type": "D-shaft"
+      },
+      "compatibility": ["Universal", "Bosch TCA Series"],
+      "installation_guide": {
+        "youtube_id": "dQw4w9WgXcQ",
+        "difficulty": "Easy",
+        "time": "5 min"
+      },
+      "tags": ["knob", "screw"],
+      "fake_makes_count": 42
+    },
+    {
+      "id": "bosch_water_tank_handle",
+      "model_id": "bosch_benvenuto_tca",
+      "name": "Ручка бака для воды",
+      "stl_link": "models/bosch_tank_handle.stl",
+      "affiliate_query": "Bosch Benvenuto water tank handle",
+      "specs": {
+        "print_time": "1h 10m",
+        "material": "PETG",
+        "weight": "25g",
+        "infill": "40%",
+        "supports": "None"
+      },
+      "technical_specs": {
+        "length": "120mm"
+      },
+      "compatibility": ["Bosch Benvenuto TCA Series"],
+      "installation_guide": {
+        "youtube_id": "dQw4w9WgXcQ",
+        "difficulty": "Easy",
+        "time": "10 min"
+      },
+      "tags": ["handle", "tank"],
+      "fake_makes_count": 64
+    }
+  ],
+  "bento": {
+    "repair": [
+      { "title": "Топ: Ручки окон", "size": "span-2x2", "query": "window handle", "type": "category", "id": "handles" },
+      { "title": "Стиральные машины", "size": "span-1x1", "query": "washing machine", "type": "device_type", "id": "washing_machine" },
+      { "title": "Шестеренки", "size": "span-2x1", "query": "gears", "type": "tag", "id": "gear" }
+    ],
+    "hobby": [
+      { "title": "Персонажи игр", "size": "span-2x2", "query": "gaming", "type": "tag", "id": "gaming" },
+      { "title": "Вазы", "size": "span-1x2", "query": "vase", "type": "tag", "id": "vase" }
+    ]
+  },
+  "rooms": [
+    { "id": "kitchen", "name": "Кухня", "icon": "fa-utensils" },
+    { "id": "bathroom", "name": "Ванная", "icon": "fa-bath" },
+    { "id": "garage", "name": "Гараж", "icon": "fa-warehouse" }
+  ]
+}
